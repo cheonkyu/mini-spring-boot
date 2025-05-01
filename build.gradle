@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+allprojects {
+    group = 'io.cheonkyu'
+    version = '0.0.1'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
