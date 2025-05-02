@@ -10,5 +10,10 @@ plugins {
 }
 
 application {
-    mainClass = 'io.cheonkyu.App'
+    mainClass = 'io.cheonkyu.MainApplication'
+}
+
+dependencies {
+    annotationProcessor(project(":core"))
+    implementation project(":core")
 }
