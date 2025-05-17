@@ -7,8 +7,9 @@ import io.cheonkyu.mini.spring.boot.SpringApplication;
 
 public class MainApplication {
     public static void main(String[] args) {
-        final var app = new SpringApplication();
-        app.run();
+        SpringApplication.run(MainApplication.class, args);
+        // final var app = new SpringApplication();
+        // app.run();
         // System.out.println(new MainApplication().getGreeting());
     }
 }

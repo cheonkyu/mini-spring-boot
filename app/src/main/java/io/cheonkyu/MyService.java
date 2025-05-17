@@ -7,4 +7,8 @@ public class MyService {
   public MyService() {
     System.out.println("[MyService] init");
   }
+
+  public String helloWorld() {
+    return "helloWorld";
+  }
 }
